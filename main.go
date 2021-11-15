@@ -15,15 +15,15 @@ import (
 
 func main() {
 	var schema = `
-	CREATE TABLE IF NOT EXISTS todos (
-		id serial,
-		task text,
-		title text,
-		is_completed boolean,
+		CREATE TABLE IF NOT EXISTS todos (
+			id serial,
+			task text,
+			title text,
+			is_completed boolean,
 
-		primary key(id)
-	);
-`
+			primary key(id)
+		);
+	`
 	db, err := sqlx.Connect("postgres", "user=postgres password=P@ssw0rd dbname=todo sslmode=disable")
     if err != nil {
         log.Fatalln(err)
