@@ -17,12 +17,12 @@
                 <form method="post" action="/todos/store">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Task Name</label>
-                        <input class="form-control" value="{{.Task}}" name="Task" type="text" aria-describedby="emailHelp" placeholder="Enter Task">
+                        <input class="form-control" value="{{.Task}}" name="Task" type="text" placeholder="Enter Task">
                         <small class="text-danger">{{.Errors.task}}</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Title</label>
-                        <input class="form-control" value="{{.Title}}" name="Title" type="text" aria-describedby="emailHelp" placeholder="Enter Title">
+                        <input class="form-control" value="{{.Title}}" name="Title" type="text" placeholder="Enter Title">
                         <small class="text-danger">{{.Errors.title}}</small>
                     </div>
                     <button type="submit" class="btn btn-primary">Create Todo</button>
