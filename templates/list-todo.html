@@ -35,7 +35,7 @@
                                 <a class="btn btn-primary" href="/todos/complete/{{.ID}}">Complete</a>
                                 {{end}}
                             </td>
-                            <td><a class="btn btn-primary" href="/todos/edit/{{.ID}}">Edit</a> | <a class="btn btn-danger" href="/todos/delete/{{.ID}}">Delete</a></td>
+                            <td><a class="btn btn-primary" {{if .IsCompleted}} {{else}} href="/todos/edit/{{.ID}}" {{end}}>Edit</a> | <a class="btn btn-danger" href="/todos/delete/{{.ID}}">Delete</a></td>
                         </tr>
                         {{end}}
                     </tbody>
